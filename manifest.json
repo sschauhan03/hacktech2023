@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "value vision",
+    "version": "1.0",
+  
+    "description": "Extracts prices and replaces them with cost/wear for websites.",
+
+  
+    "permissions": [
+      "activeTab"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
+  
